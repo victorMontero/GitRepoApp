@@ -4,6 +4,7 @@ package com.android.gitrepoapp.models
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
+import java.io.Serializable
 
 @Entity(
     tableName = "repositories"
@@ -95,4 +96,4 @@ data class RepositoryResponseItem(
     @SerializedName("trees_url")
     val treesUrl: String,
     val url: String
-)
+) : Serializable

@@ -13,6 +13,6 @@ class Converters {
 
     @TypeConverter
         fun toOwner(login: String): Owner{
-        return Owner(login)
+        return Owner(login, login, login, login, login, true, login, login, login, login)
     }
 }
